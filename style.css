@@ -1,0 +1,141 @@
+body{
+  background-image: url("BombinhasSC.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  text-align:center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif; /* Define a fonte padrão */
+}
+
+html {
+  scroll-behavior: smooth; /* Adiciona o comportamento de rolagem suave */
+}
+
+.sem-ponto { /* Remove os pontos da lista */
+  list-style-type: none; /* Remove os pontos da lista */
+  padding-left: 0; /* Remove o padding esquerdo */
+}
+
+.menu-sem-ponto {
+  list-style-type: none; /* Remove os pontos da lista */
+  padding: 0; /* Remove o padding esquerdo */
+  display: flex; /* Define o display como flex */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  gap: 20px; /* Adiciona um espaço entre os itens */
+}
+.menu-sem-ponto a {
+  text-decoration: none; /* Remove a decoração do link */
+  color: white; /* Define a cor do link */  
+  font-weight: bold; /* Define o peso da fonte */
+}
+
+.sem-ponto-curiosidades {
+  list-style-type: none; /* Remove os pontos da lista */
+  padding: 0; /* Remove o padding esquerdo */
+}
+
+.section-padrao {
+  padding: 40px 0; /* Adiciona padding superior e inferior */
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box /* Garante que o padding não afete o tamanho total */
+}
+
+.fundo-fosco {
+  background-color: rgba(255, 255, 255, 0.2);  /* Define a cor de fundo com transparência */
+  backdrop-filter: blur(10px); /* Adiciona o efeito de desfoque */
+  padding: 10px;  /* Adiciona padding interno */
+  border-radius: 20px; /* Adiciona bordas arredondadas */
+
+  /*ADIÇOES PARA CENTRALIZR O CONTEUDO*/
+  max-width: 800px;  /* Define a largura máxima */
+  margin: 0 auto; /* Centraliza o conteúdo */
+}
+
+.mapa {
+  width: 100%;  /* Define a largura do mapa */
+  max-width: 800px;  /* Define a largura máxima do mapa */
+  margin: 0 auto; /* Centraliza o mapa */
+  padding: 10px 0; /* Adiciona padding interno */
+}
+
+#itensTrilha {
+  width: 300px;  /* Define a largura da imagem */
+}
+.carousel { /* Adiciona o estilo para o carrossel */
+  margin: 2rem auto; /* Adiciona margem externa */
+  max-width: 600px; /* Define a largura máxima */
+}
+
+.carousel-item img { /* Adiciona o estilo para as imagens do carrossel */
+  width: 100%; /* Define a largura da imagem */
+  height: 300px; /* Define a altura da imagem */
+  object-fit: cover; /* Define o ajuste da imagem */
+  object-position: center; /* Define a posição da imagem */
+  border-radius: 8px; /* Adiciona bordas arredondadas */
+}
+
+.carousel-item:nith-child(1) { /* Adiciona o estilo para a primeira imagem do carrossel */
+  object-position: center top; /* Define a posição da imagem */
+}
+
+.carousel-item img:nth-child(2) { /* Adiciona o estilo para a segunda imagem do carrossel */
+  object-position: center center; /* Define a posição da imagem */
+}
+
+.carousel-caption { /* Adiciona o estilo para o texto do carrossel */
+  position: absolute; /* Define a posição como absoluta */
+  top: 50%; /* Define a posição superior */
+  left: 50%; /* Define a posição esquerda */
+  width: 90%; /* Define a largura */
+  transform: translate(-50%, -50%); /* Define a transformação */
+  background: rbga(0, 0, 0, 0.4); /* Define a cor de fundo */
+  color: white; /* Define a cor do texto */
+  align-items: center; /* Centraliza os itens verticalmente */
+  padding: 20px; /* Adiciona padding interno */
+  text-align: center; /* Centraliza o texto */
+  z-index: 2; /* Define a ordem de empilhamento */
+}
+
+.carousel-caption h1 { /* Adiciona o estilo para o título do carrossel */
+  margin-bottom: 10px; /* Adiciona margem inferior */
+  font-size: 24px; /* Define o tamanho da fonte */
+}
+
+.carousel-caption nav ul { /* Adiciona o estilo para o menu do carrossel */
+  list-style: none; /* Remove os pontos da lista */
+  padding: 0; /* Remove o padding interno */
+  margin: 0; /* Remove a margem externa */
+  display: flex; /* Define o display como flex */
+  gap: 15px; /* Adiciona um espaço entre os itens */
+}
+
+.carousel-caption nav ul li a { /* Adiciona o estilo para os links do carrossel */
+  color: white; /* Define a cor do link */
+  text-decoration: none; /* Remove a decoração do link */
+  font-weight: bold; /* Define o peso da fonte */
+}
+
+.carousel-inner::before { /* Adiciona o efeito de escurecimento */
+  content: ""; /* Define o conteúdo */
+  position: absolute; /* Define a posição como absoluta */
+  top: 0; /* Define a posição superior */
+  left: 0; /* Define a posição esquerda */
+  width: 100%; /* Define a largura */
+  height: 100%; /* Define a altura */
+  background: rgba(0, 0, 0, 0.4); /* Define a cor de fundo */
+  z-index: 1; /* Define a ordem de empilhamento */
+  border-radius: 8px;
+}
+
+button {
+  background: #007bff;
+  border: 1px solid transparent; 
+  padding: 2px 20px; 
+  border-radius: 3px; 
+}
